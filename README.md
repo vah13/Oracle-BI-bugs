@@ -53,7 +53,6 @@ I've tried to generate a session several times and I've got the same value in th
 ```
 <createSessionReturn xsi:type="xsd:string">-1626402211</createSessionReturn>
 ```
-![session](https://github.com/vah13/Oracle-BI-bugs/blob/master/img/sess1.jpg)
 
 ```java
 private String createCallerSession(final XDOPrincipal user, final String domain) {
