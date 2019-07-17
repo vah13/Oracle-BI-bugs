@@ -50,7 +50,7 @@ Content-Length: 610
 ```
 I tried to generate a session a few time and I got the same value in the response. I changed the password and but again I got 
 ```
-<v2:sessionToken>-1626402211</v2:sessionToken>
+<createSessionReturn xsi:type="xsd:string">-1626402211</createSessionReturn>
 ```
 ```java
 private String createCallerSession(final XDOPrincipal user, final String domain) {
