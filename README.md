@@ -78,7 +78,7 @@ WHAT? Is the session consists of two public datas? I tried to write a simple cod
 ![web](https://github.com/vah13/Oracle-BI-bugs/blob/master/img/hash.png)
 
 
-
+Example of plugin deploy request
 ```
 POST /xmlpserver/services/v2/PluginService HTTP/1.1
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0
@@ -104,7 +104,7 @@ Content-Length: 431
    </soapenv:Body>
 </soapenv:Envelope>
 ```
-
+so, as a result, you can take control of a server if you know 2 public data of server.
 
 
 ## CVE-2019-2771
