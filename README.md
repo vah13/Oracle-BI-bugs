@@ -74,7 +74,7 @@ private String createCallerSession(final XDOPrincipal user, final String domain)
         return new Integer(key).toString();
     }
 ```
-WHAT? The session is value of 2 public data? I tried to write a simple code here what I got
+WHAT? Is the session consists of two public datas? I tried to write a simple code here what I got
 ![web](https://github.com/vah13/Oracle-BI-bugs/blob/master/img/hash.png)
 
 
