@@ -48,7 +48,7 @@ Content-Length: 610
 </soapenv:Envelope>
 
 ```
-
+I tried to generate a session a few time and I got the same value in the response. I changed the password and but again I got 
 ```
 <v2:sessionToken>-1626402211</v2:sessionToken>
 ```
@@ -74,6 +74,10 @@ private String createCallerSession(final XDOPrincipal user, final String domain)
         return new Integer(key).toString();
     }
 ```
+WHAT? The session is value of 2 public data? I tried to write a simple code here what I got
+![web](https://github.com/vah13/Oracle-BI-bugs/blob/master/img/hash.png)
+
+
 
 ```
 POST /xmlpserver/services/v2/PluginService HTTP/1.1
