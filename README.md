@@ -126,5 +126,5 @@ So, as you can see , if someone knows 2 public data of the server he can take it
 
 
 ---
-https://twitter.com/vah_13
-https://twitter.com/NewFranny
+ * https://twitter.com/vah_13
+ * https://twitter.com/NewFranny
