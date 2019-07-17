@@ -78,6 +78,7 @@ private String createCallerSession(final XDOPrincipal user, final String domain)
     }
 ```
 WHAT? It seems that the session consists of two public datas (username and server ID). In order to check it I wrote a simple code and here  is what I got as a result.
+
 ![web](https://github.com/vah13/Oracle-BI-bugs/blob/master/img/hash.png)
 
 
