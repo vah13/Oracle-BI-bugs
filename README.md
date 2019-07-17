@@ -52,7 +52,7 @@ Content-Length: 610
 ```
 <v2:sessionToken>-1626402211</v2:sessionToken>
 ```
-``` 
+```java
 private String createCallerSession(final XDOPrincipal user, final String domain) {
         Logger.log("XMLPService.createCallerSession...if here things are looking ok", 1);
         final String token = tokenize(domain, user.getName());
