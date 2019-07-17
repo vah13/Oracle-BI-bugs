@@ -21,7 +21,7 @@ Upgrade-Insecure-Requests: 1
  * CVSSv3.0 Base Score: 7.5
  * CVSS Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
  
-Oracle BI has xmlpserver which uses an administrator to configure the server. To use xmlpserver services, the administrator needs to create a session using createSession function.
+Oracle BI has xmlpserver which the administrator is using for configuring the server. To use the xmlpserver services, the administrator have to create a session using createSession function.
 ```
 POST /xmlpserver/services/XMLPService HTTP/1.1
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0
@@ -48,7 +48,7 @@ Content-Length: 610
 </soapenv:Envelope>
 
 ```
-I tried to generate a session a few time and I got the same value in the response. I changed the password and but again I got 
+I've tried to generate a session several times and I've got the same value in the response. I changed the password and but again I got the same response.
 
 ```
 <createSessionReturn xsi:type="xsd:string">-1626402211</createSessionReturn>
@@ -77,7 +77,7 @@ private String createCallerSession(final XDOPrincipal user, final String domain)
         return new Integer(key).toString();
     }
 ```
-WHAT? Is the session consists of two public datas (username and server ID)? I tried to write a simple code here what I got
+WHAT? It seems that the session consists of two public datas (username and server ID). In order to check it I wrote a simple code and here  is what I got as a result.
 ![web](https://github.com/vah13/Oracle-BI-bugs/blob/master/img/hash.png)
 
 
@@ -107,7 +107,7 @@ Content-Length: 431
    </soapenv:Body>
 </soapenv:Envelope>
 ```
-so, as a result, you can take control of a server if you know 2 public data of server.
+So, as you can see , if someone knows 2 public data of the server he can take it under control.
 
 
 ## CVE-2019-2771
