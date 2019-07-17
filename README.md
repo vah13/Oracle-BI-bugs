@@ -52,7 +52,28 @@ Content-Length: 610
 ```
 <v2:sessionToken>-1626402211</v2:sessionToken>
 ```
-
+``` 
+private String createCallerSession(final XDOPrincipal user, final String domain) {
+        Logger.log("XMLPService.createCallerSession...if here things are looking ok", 1);
+        final String token = tokenize(domain, user.getName());
+        final XDOPrincipal principal = TokenHolder.getPrincipal(token);
+        if (principal == null) {
+            final XDOPrincipal guser = (XDOPrincipal)GlobalUser.get();
+            TokenHolder.addPrincipal(token, guser);
+        }
+        return token;
+    }
+    
+    private static String tokenize(final String domain, final String username) {
+        final StringBuffer sb = new StringBuffer();
+        if (domain != null) {
+            sb.append(domain);
+        }
+        sb.append(':').append(username);
+        final int key = sb.toString().hashCode();
+        return new Integer(key).toString();
+    }
+    ```
 ```
 POST /xmlpserver/services/v2/PluginService HTTP/1.1
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0
