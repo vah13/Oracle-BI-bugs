@@ -48,6 +48,11 @@ Content-Length: 610
 </soapenv:Envelope>
 
 ```
+
+```
+<v2:sessionToken>-1626402211</v2:sessionToken>
+```
+
 ```
 POST /xmlpserver/services/v2/PluginService HTTP/1.1
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0
@@ -73,6 +78,8 @@ Content-Length: 431
    </soapenv:Body>
 </soapenv:Envelope>
 ```
+
+
 
 ## CVE-2019-2771
  * Subject: BIP BYPASS FONT UPLOAD
