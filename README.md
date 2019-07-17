@@ -49,9 +49,12 @@ Content-Length: 610
 
 ```
 I tried to generate a session a few time and I got the same value in the response. I changed the password and but again I got 
+
 ```
 <createSessionReturn xsi:type="xsd:string">-1626402211</createSessionReturn>
 ```
+![web](https://github.com/vah13/Oracle-BI-bugs/blob/master/img/sess1.png)
+
 ```java
 private String createCallerSession(final XDOPrincipal user, final String domain) {
         Logger.log("XMLPService.createCallerSession...if here things are looking ok", 1);
