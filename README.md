@@ -122,3 +122,9 @@ So, as you can see , if someone knows 2 public data of the server he can take it
 ![write file](https://github.com/vah13/Oracle-BI-bugs/blob/master/img/f3.png)
 
 ![file on the system](https://github.com/vah13/Oracle-BI-bugs/blob/master/img/f4.png)
+
+
+
+---
+https://twitter.com/vah_13
+https://twitter.com/NewFranny
